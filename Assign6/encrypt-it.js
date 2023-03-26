@@ -22,7 +22,7 @@
       encryptButton.addEventListener("click", handleClick);
       var resetButton = document.getElementById("reset-it");
       resetButton.addEventListener("click", handleReset);
-      
+
     }
   
     // Add any other functions in this area (you should not implement your
