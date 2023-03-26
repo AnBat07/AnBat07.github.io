@@ -20,6 +20,8 @@
       // for UI elements on the page.
       var encryptButton = document.getElementById("encrypt-it");
       encryptButton.addEventListener("click", handleClick);
+      var resetButton = document.getElementById("reset-it");
+      resetButton.addEventListener("click", handleClick);
     }
   
     // Add any other functions in this area (you should not implement your
@@ -27,15 +29,12 @@
     // you shouldn't write an entire Java program in the main method).
     function handleClick(){
         console.log("Button clicked!");
-  }
-
-  function textEncryption(){
-    var inputTextArea = document.getElementById("input");
-    var outputText = document.getElementById("output");
-    var inputText = inputTextArea.ariaValueMax;
-    var encryptedText = shiftCipher(inputText);
-    outputText.textContent = encryptedText;
-  }
+        var inputTextArea = document.getElementById("input");
+        var outputText = document.getElementById("output");
+        var inputText = inputTextArea.ariaValueMax;
+        var encryptedText = shiftCipher(inputText);
+        outputText.textContent = encryptedText;
+    }
 
     /**
     * Returns an encrypted version of the given text, where
