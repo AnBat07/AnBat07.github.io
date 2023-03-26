@@ -20,8 +20,6 @@
       // for UI elements on the page.
       var encryptButton = document.getElementById("encrypt-it");
       encryptButton.addEventListener("click", handleClick);
-      var resetButton = document.getElementById("reset-it");
-      resetButton.addEventListener("click", handleReset);
 
     }
   
@@ -38,14 +36,6 @@
             outputText.textContent = encryptedText;
         }
     }
-
-    function handleReset(){
-        var inputTextArea = document.getElementById("input");
-        var outputText = document.getElementById("output");
-        inputTextArea.value = "";
-        outputText.textContent = "";
-    }
-
     /**
     * Returns an encrypted version of the given text, where
     * each letter is shifted alphabetically ahead by 1 letter,
