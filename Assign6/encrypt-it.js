@@ -19,15 +19,15 @@
       // Note: In this function, we usually want to set up our event handlers
       // for UI elements on the page.
       var encryptButton = document.getElementById("encrypt-it");
-      encryptButton.addEventListener("click", handleResult);
+      encryptButton.addEventListener("click", handleClick);
       var resetButton = document.getElementById("reset-it");
-      resetButton.addEventListener("click", handleResult);
+      resetButton.addEventListener("click", handleReset);
     }
   
     // Add any other functions in this area (you should not implement your
     // entire program in the init function, for similar reasons that
     // you shouldn't write an entire Java program in the main method).
-    function handleResult(){
+    function handleClick(){
         console.log("Button clicked!");
         if(this.id === "encrypt-it"){
             var inputTextArea = document.getElementById("input");
