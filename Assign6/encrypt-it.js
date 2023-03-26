@@ -30,8 +30,8 @@
     function handleClick(){
         console.log("Button clicked!");
         if(this.id === "encrypt-it"){
-            var inputTextArea = document.getElementById("input");
-            var outputText = document.getElementById("output");
+            var inputTextArea = document.getElementById("input-text");
+            var outputText = document.getElementById("result-area");
             if(inputTextArea !== null){
                 var inputText = inputTextArea.value;
                 var encryptedText = shiftCipher(inputText);
