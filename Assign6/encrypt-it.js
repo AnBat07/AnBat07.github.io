@@ -31,9 +31,11 @@
         if(this.id === "encrypt-it"){
             var inputTextArea = document.getElementById("input");
             var outputText = document.getElementById("output");
-            var inputText = inputTextArea.value;
-            var encryptedText = shiftCipher(inputText);
-            outputText.textContent = encryptedText;
+            if(inputTextArea !== null){
+                var inputText = inputTextArea.value;
+                var encryptedText = shiftCipher(inputText);
+                outputText.textContent = encryptedText;
+            }
         }
     }
     /**
