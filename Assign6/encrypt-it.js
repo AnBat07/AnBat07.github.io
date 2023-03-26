@@ -26,6 +26,7 @@
     // Add any other functions in this area (you should not implement your
     // entire program in the init function, for similar reasons that
     // you shouldn't write an entire Java program in the main method).
+    //check if the texzt is null
     function handleClick(){
         console.log("Button clicked!");
         if(this.id === "encrypt-it"){
