@@ -27,13 +27,22 @@
     // Add any other functions in this area (you should not implement your
     // entire program in the init function, for similar reasons that
     // you shouldn't write an entire Java program in the main method).
-    function handleClick(){
+    function handleResult(){
         console.log("Button clicked!");
+        if(this.id === "encrypt-it"){
+            var inputTextArea = document.getElementById("input");
+            var outputText = document.getElementById("output");
+            var inputText = inputTextArea.value;
+            var encryptedText = shiftCipher(inputText);
+            outputText.textContent = encryptedText;
+        }
+    }
+
+    function handleReset(){
         var inputTextArea = document.getElementById("input");
         var outputText = document.getElementById("output");
-        var inputText = inputTextArea.ariaValueMax;
-        var encryptedText = shiftCipher(inputText);
-        outputText.textContent = encryptedText;
+        inputTextArea.value = "";
+        outputText.textContent = "";
     }
 
     /**
